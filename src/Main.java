@@ -20,7 +20,8 @@ public class Main {
                 "\ta - left\n" +
                 "\ts - down\n" +
                 "\td - right\n" +
-                "\tq - exit the program\n"
+                "\tq - exit the program\n"+
+                "Reach a tile of value "+goalValue+"\n"
         );
         while (gameOver==false)
         {
@@ -42,6 +43,7 @@ public class Main {
             if (gameOver==true)
             {
                 System.out.println("---GAME OVER---");
+                board.printBoard(board);
                 return ;
             }
             MaxValue=board.HighestNumber(board);

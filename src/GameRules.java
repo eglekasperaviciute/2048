@@ -51,7 +51,6 @@ public class GameRules {
         }
 
     public boolean freeSpaces (GameBoard board) {
-        int values[][]=board.getBoard();
         int freePlaces=0;
         for (int i=0; i<4; i++)
         {
